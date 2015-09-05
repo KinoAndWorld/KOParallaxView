@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305C97F339AFFC296BF2F3E6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BC3B14814F2BA0C0FE1FCB /* libPods.a */; };
+		3876BD511B9AEA6500B8EF0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD501B9AEA6500B8EF0B /* main.m */; };
+		3876BD541B9AEA6500B8EF0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD531B9AEA6500B8EF0B /* AppDelegate.m */; };
+		3876BD571B9AEA6500B8EF0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD561B9AEA6500B8EF0B /* ViewController.m */; };
+		3876BD5A1B9AEA6500B8EF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD581B9AEA6500B8EF0B /* Main.storyboard */; };
+		3876BD5C1B9AEA6500B8EF0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD5B1B9AEA6500B8EF0B /* Images.xcassets */; };
+		3876BD5F1B9AEA6500B8EF0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD5D1B9AEA6500B8EF0B /* LaunchScreen.xib */; };
+		3876BD6B1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD6A1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m */; };
+		3876BD761B9AF26200B8EF0B /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD751B9AF26200B8EF0B /* DemoViewController.m */; };
+		3876BD7F1B9AF2E400B8EF0B /* KOParallaxContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD7A1B9AF2E400B8EF0B /* KOParallaxContentView.m */; };
+		3876BD801B9AF2E400B8EF0B /* KOParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD7C1B9AF2E400B8EF0B /* KOParallaxHeader.m */; };
+		3876BD811B9AF2E400B8EF0B /* KOParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD7E1B9AF2E400B8EF0B /* KOParallaxView.m */; };
+		3876BD871B9AF2F600B8EF0B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD821B9AF2F600B8EF0B /* 1.jpg */; };
+		3876BD881B9AF2F600B8EF0B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD831B9AF2F600B8EF0B /* 2.jpg */; };
+		3876BD891B9AF2F600B8EF0B /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD841B9AF2F600B8EF0B /* 3.jpg */; };
+		3876BD8A1B9AF2F600B8EF0B /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD851B9AF2F600B8EF0B /* 4.jpg */; };
+		3876BD8B1B9AF2F600B8EF0B /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD861B9AF2F600B8EF0B /* 5.jpg */; };
+		3876BD8D1B9AFC6300B8EF0B /* placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD8C1B9AFC6300B8EF0B /* placeHolder.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3876BD651B9AEA6500B8EF0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3876BD431B9AEA6500B8EF0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3876BD4A1B9AEA6500B8EF0B;
+			remoteInfo = KOParallaxViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3876BD4B1B9AEA6500B8EF0B /* KOParallaxViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOParallaxViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3876BD4F1B9AEA6500B8EF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3876BD501B9AEA6500B8EF0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3876BD521B9AEA6500B8EF0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3876BD531B9AEA6500B8EF0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3876BD551B9AEA6500B8EF0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3876BD561B9AEA6500B8EF0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3876BD591B9AEA6500B8EF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3876BD5B1B9AEA6500B8EF0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3876BD5E1B9AEA6500B8EF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3876BD641B9AEA6500B8EF0B /* KOParallaxViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOParallaxViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3876BD691B9AEA6500B8EF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3876BD6A1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOParallaxViewDemoTests.m; sourceTree = "<group>"; };
+		3876BD741B9AF26200B8EF0B /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		3876BD751B9AF26200B8EF0B /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		3876BD781B9AF2E400B8EF0B /* KOParallaxConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxConst.h; sourceTree = "<group>"; };
+		3876BD791B9AF2E400B8EF0B /* KOParallaxContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxContentView.h; sourceTree = "<group>"; };
+		3876BD7A1B9AF2E400B8EF0B /* KOParallaxContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxContentView.m; sourceTree = "<group>"; };
+		3876BD7B1B9AF2E400B8EF0B /* KOParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxHeader.h; sourceTree = "<group>"; };
+		3876BD7C1B9AF2E400B8EF0B /* KOParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxHeader.m; sourceTree = "<group>"; };
+		3876BD7D1B9AF2E400B8EF0B /* KOParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxView.h; sourceTree = "<group>"; };
+		3876BD7E1B9AF2E400B8EF0B /* KOParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxView.m; sourceTree = "<group>"; };
+		3876BD821B9AF2F600B8EF0B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		3876BD831B9AF2F600B8EF0B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		3876BD841B9AF2F600B8EF0B /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		3876BD851B9AF2F600B8EF0B /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		3876BD861B9AF2F600B8EF0B /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		3876BD8C1B9AFC6300B8EF0B /* placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeHolder.png; sourceTree = "<group>"; };
+		43A79FBA5644A81BDAA13844 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A0BC3B14814F2BA0C0FE1FCB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7F2BADC9A358B5EBEC5A76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3876BD481B9AEA6500B8EF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305C97F339AFFC296BF2F3E6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3876BD611B9AEA6500B8EF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3876BD421B9AEA6500B8EF0B = {
+			isa = PBXGroup;
+			children = (
+				3876BD4D1B9AEA6500B8EF0B /* KOParallaxViewDemo */,
+				3876BD671B9AEA6500B8EF0B /* KOParallaxViewDemoTests */,
+				3876BD4C1B9AEA6500B8EF0B /* Products */,
+				F8FC5FAE002B3CE798965226 /* Pods */,
+				9CAB3202654965E8C5935044 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3876BD4C1B9AEA6500B8EF0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3876BD4B1B9AEA6500B8EF0B /* KOParallaxViewDemo.app */,
+				3876BD641B9AEA6500B8EF0B /* KOParallaxViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3876BD4D1B9AEA6500B8EF0B /* KOParallaxViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3876BD521B9AEA6500B8EF0B /* AppDelegate.h */,
+				3876BD531B9AEA6500B8EF0B /* AppDelegate.m */,
+				3876BD551B9AEA6500B8EF0B /* ViewController.h */,
+				3876BD561B9AEA6500B8EF0B /* ViewController.m */,
+				3876BD741B9AF26200B8EF0B /* DemoViewController.h */,
+				3876BD751B9AF26200B8EF0B /* DemoViewController.m */,
+				3876BD581B9AEA6500B8EF0B /* Main.storyboard */,
+				3876BD5B1B9AEA6500B8EF0B /* Images.xcassets */,
+				3876BD771B9AF2E400B8EF0B /* KOParallax */,
+				3876BD5D1B9AEA6500B8EF0B /* LaunchScreen.xib */,
+				3876BD4E1B9AEA6500B8EF0B /* Supporting Files */,
+			);
+			path = KOParallaxViewDemo;
+			sourceTree = "<group>";
+		};
+		3876BD4E1B9AEA6500B8EF0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3876BD8C1B9AFC6300B8EF0B /* placeHolder.png */,
+				3876BD821B9AF2F600B8EF0B /* 1.jpg */,
+				3876BD831B9AF2F600B8EF0B /* 2.jpg */,
+				3876BD841B9AF2F600B8EF0B /* 3.jpg */,
+				3876BD851B9AF2F600B8EF0B /* 4.jpg */,
+				3876BD861B9AF2F600B8EF0B /* 5.jpg */,
+				3876BD4F1B9AEA6500B8EF0B /* Info.plist */,
+				3876BD501B9AEA6500B8EF0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3876BD671B9AEA6500B8EF0B /* KOParallaxViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3876BD6A1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m */,
+				3876BD681B9AEA6500B8EF0B /* Supporting Files */,
+			);
+			path = KOParallaxViewDemoTests;
+			sourceTree = "<group>";
+		};
+		3876BD681B9AEA6500B8EF0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3876BD691B9AEA6500B8EF0B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3876BD771B9AF2E400B8EF0B /* KOParallax */ = {
+			isa = PBXGroup;
+			children = (
+				3876BD781B9AF2E400B8EF0B /* KOParallaxConst.h */,
+				3876BD791B9AF2E400B8EF0B /* KOParallaxContentView.h */,
+				3876BD7A1B9AF2E400B8EF0B /* KOParallaxContentView.m */,
+				3876BD7B1B9AF2E400B8EF0B /* KOParallaxHeader.h */,
+				3876BD7C1B9AF2E400B8EF0B /* KOParallaxHeader.m */,
+				3876BD7D1B9AF2E400B8EF0B /* KOParallaxView.h */,
+				3876BD7E1B9AF2E400B8EF0B /* KOParallaxView.m */,
+			);
+			path = KOParallax;
+			sourceTree = "<group>";
+		};
+		9CAB3202654965E8C5935044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0BC3B14814F2BA0C0FE1FCB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8FC5FAE002B3CE798965226 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43A79FBA5644A81BDAA13844 /* Pods.debug.xcconfig */,
+				FB7F2BADC9A358B5EBEC5A76 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3876BD4A1B9AEA6500B8EF0B /* KOParallaxViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3876BD6E1B9AEA6500B8EF0B /* Build configuration list for PBXNativeTarget "KOParallaxViewDemo" */;
+			buildPhases = (
+				00DAB238F81E4B92DF6D584A /* Check Pods Manifest.lock */,
+				3876BD471B9AEA6500B8EF0B /* Sources */,
+				3876BD481B9AEA6500B8EF0B /* Frameworks */,
+				3876BD491B9AEA6500B8EF0B /* Resources */,
+				04D84F6DB69A77DDF9F92ED8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KOParallaxViewDemo;
+			productName = KOParallaxViewDemo;
+			productReference = 3876BD4B1B9AEA6500B8EF0B /* KOParallaxViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3876BD631B9AEA6500B8EF0B /* KOParallaxViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3876BD711B9AEA6500B8EF0B /* Build configuration list for PBXNativeTarget "KOParallaxViewDemoTests" */;
+			buildPhases = (
+				3876BD601B9AEA6500B8EF0B /* Sources */,
+				3876BD611B9AEA6500B8EF0B /* Frameworks */,
+				3876BD621B9AEA6500B8EF0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3876BD661B9AEA6500B8EF0B /* PBXTargetDependency */,
+			);
+			name = KOParallaxViewDemoTests;
+			productName = KOParallaxViewDemoTests;
+			productReference = 3876BD641B9AEA6500B8EF0B /* KOParallaxViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3876BD431B9AEA6500B8EF0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					3876BD4A1B9AEA6500B8EF0B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3876BD631B9AEA6500B8EF0B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3876BD4A1B9AEA6500B8EF0B;
+					};
+				};
+			};
+			buildConfigurationList = 3876BD461B9AEA6500B8EF0B /* Build configuration list for PBXProject "KOParallaxViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3876BD421B9AEA6500B8EF0B;
+			productRefGroup = 3876BD4C1B9AEA6500B8EF0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3876BD4A1B9AEA6500B8EF0B /* KOParallaxViewDemo */,
+				3876BD631B9AEA6500B8EF0B /* KOParallaxViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3876BD491B9AEA6500B8EF0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3876BD5A1B9AEA6500B8EF0B /* Main.storyboard in Resources */,
+				3876BD8D1B9AFC6300B8EF0B /* placeHolder.png in Resources */,
+				3876BD8B1B9AF2F600B8EF0B /* 5.jpg in Resources */,
+				3876BD8A1B9AF2F600B8EF0B /* 4.jpg in Resources */,
+				3876BD871B9AF2F600B8EF0B /* 1.jpg in Resources */,
+				3876BD881B9AF2F600B8EF0B /* 2.jpg in Resources */,
+				3876BD891B9AF2F600B8EF0B /* 3.jpg in Resources */,
+				3876BD5F1B9AEA6500B8EF0B /* LaunchScreen.xib in Resources */,
+				3876BD5C1B9AEA6500B8EF0B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3876BD621B9AEA6500B8EF0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DAB238F81E4B92DF6D584A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		04D84F6DB69A77DDF9F92ED8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3876BD471B9AEA6500B8EF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3876BD571B9AEA6500B8EF0B /* ViewController.m in Sources */,
+				3876BD801B9AF2E400B8EF0B /* KOParallaxHeader.m in Sources */,
+				3876BD811B9AF2E400B8EF0B /* KOParallaxView.m in Sources */,
+				3876BD541B9AEA6500B8EF0B /* AppDelegate.m in Sources */,
+				3876BD511B9AEA6500B8EF0B /* main.m in Sources */,
+				3876BD761B9AF26200B8EF0B /* DemoViewController.m in Sources */,
+				3876BD7F1B9AF2E400B8EF0B /* KOParallaxContentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3876BD601B9AEA6500B8EF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3876BD6B1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3876BD661B9AEA6500B8EF0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3876BD4A1B9AEA6500B8EF0B /* KOParallaxViewDemo */;
+			targetProxy = 3876BD651B9AEA6500B8EF0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3876BD581B9AEA6500B8EF0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3876BD591B9AEA6500B8EF0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3876BD5D1B9AEA6500B8EF0B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3876BD5E1B9AEA6500B8EF0B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3876BD6C1B9AEA6500B8EF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3876BD6D1B9AEA6500B8EF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3876BD6F1B9AEA6500B8EF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A79FBA5644A81BDAA13844 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KOParallaxViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3876BD701B9AEA6500B8EF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7F2BADC9A358B5EBEC5A76 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KOParallaxViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3876BD721B9AEA6500B8EF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KOParallaxViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOParallaxViewDemo.app/KOParallaxViewDemo";
+			};
+			name = Debug;
+		};
+		3876BD731B9AEA6500B8EF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KOParallaxViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOParallaxViewDemo.app/KOParallaxViewDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3876BD461B9AEA6500B8EF0B /* Build configuration list for PBXProject "KOParallaxViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3876BD6C1B9AEA6500B8EF0B /* Debug */,
+				3876BD6D1B9AEA6500B8EF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3876BD6E1B9AEA6500B8EF0B /* Build configuration list for PBXNativeTarget "KOParallaxViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3876BD6F1B9AEA6500B8EF0B /* Debug */,
+				3876BD701B9AEA6500B8EF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3876BD711B9AEA6500B8EF0B /* Build configuration list for PBXNativeTarget "KOParallaxViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3876BD721B9AEA6500B8EF0B /* Debug */,
+				3876BD731B9AEA6500B8EF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3876BD431B9AEA6500B8EF0B /* Project object */;
+}
