@@ -49,16 +49,20 @@
         _parallaxHeader.imageListView.displayImages = images;
     }else if (_displayType == DisplayTypeAsyncLoadImage){
         
+        NSMutableArray *images = [NSMutableArray array];
+        for (int i = 0; i < 5 ;i++) {
+            //first add 5 holder image to show
+            [images addObject:[UIImage imageNamed:@"placeHolder"]];
+        }
+        _parallaxHeader.imageListView.displayImages = images;
+        
+        //download queueurlString
         NSArray *urlStrings = @[@"http://imglf0.ph.126.net/I3zHRLTUyuGMiNRxDG9IRg==/1820861624441588616.jpg",
                                 @"http://imglf1.ph.126.net/u3tngqcq_BLRplgof1Rwww==/6631400917722090442.jpg",
                                 @"http://imglf1.ph.126.net/vTFTDtzInxX81OaIZYjPTw==/1953436338472180810.jpg",
                                 @"http://imglf1.ph.126.net/T8h3JCh-6ZebvPAbzF1nGQ==/6608625633864352762.jpg",
                                 @"http://imglf2.ph.126.net/k-amVP9oOgWmZCK4Do9K1Q==/164944336452609458.jpg"];
-        NSMutableArray *images = [NSMutableArray array];
         for (NSString *urlString in urlStrings) {
-            //first add 5 holder image to show
-            [images addObject:[UIImage imageNamed:@"placeHolder"]];
-            
             __weak DemoViewController *weakSelf = self;
             [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:urlString]
                                                             options:SDWebImageCacheMemoryOnly
@@ -69,7 +73,6 @@
                                                                }
                                                            }];
         }
-        _parallaxHeader.imageListView.displayImages = images;
     }
     
     self.tableView.tableHeaderView = _parallaxHeader;
