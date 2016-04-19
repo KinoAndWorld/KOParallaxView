@@ -36,6 +36,9 @@
                        CGRectMake(0, 0, self.view.bounds.size.width, 300)
                                            forScorllContainer:self.tableView
                                     openContentParallaxEffect:YES];
+    
+    _parallaxHeader.imageListView.autoScroll = YES;
+    
     if (_displayType == DisplayTypeSingleImage) {
         _parallaxHeader.imageListView.displayImages = [@[[UIImage imageNamed:@"1.jpg"]] mutableCopy];
         
@@ -74,8 +77,12 @@
                                                            }];
         }
     }
-    
     self.tableView.tableHeaderView = _parallaxHeader;
+    
+    
+    [_parallaxHeader setDidSelectItemPage:^(NSUInteger itemPage) {
+        NSLog(@"itemPage = %d", (int)itemPage);
+    }];
 }
 
 #pragma mark - TableView

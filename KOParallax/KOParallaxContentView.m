@@ -27,7 +27,7 @@
 }
 
 - (void)commonInit{
-    _maxParallaxOffset = 80.f;
+    _maxParallaxOffset = 50.f;
     
     self.clipsToBounds = YES;
     
@@ -81,7 +81,7 @@
     _parallaxProgress = parallaxProgress;
     CGRect frame = self.displayImageView.frame;
     
-    frame.origin.x = -_maxParallaxOffset + parallaxProgress * _maxParallaxOffset;
+    frame.origin.x = -_maxParallaxOffset + parallaxProgress * -_maxParallaxOffset;
     self.displayImageView.frame = frame;
 }
 

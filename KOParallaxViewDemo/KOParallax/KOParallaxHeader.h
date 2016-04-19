@@ -14,12 +14,12 @@
 
 @property (assign, nonatomic) CGFloat parallaxDeltaFactor;              //default is 0.5
 
+
 @property (strong, nonatomic, readonly) KOParallaxView *imageListView;
-
 @property (copy, nonatomic) void(^whenScrollViewFrameChanged)(CGRect scrollNewFrame, CGFloat delta);
-
 @property (copy, nonatomic) UIView *(^parallaxContentViewLoadBlock)(NSUInteger index);
 
+@property (copy, nonatomic) void(^didSelectItemPage)(NSUInteger page);
 
 - (instancetype)initWithFrame:(CGRect)frame
            forScorllContainer:(UIScrollView *)container;

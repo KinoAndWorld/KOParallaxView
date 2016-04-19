@@ -22,6 +22,8 @@
 @property (assign, nonatomic, getter = isScrollEnabled) BOOL scrollEnabled;
 @property (assign, nonatomic, readonly) KOParallaxState state;
 
+@property (assign, nonatomic) BOOL autoScroll;
+
 - (instancetype)initWithFrame:(CGRect)frame
          isOpenParallaxEffect:(BOOL)openParallaxEffect;
 

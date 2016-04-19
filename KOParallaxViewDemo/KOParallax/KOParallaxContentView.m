@@ -27,7 +27,7 @@
 }
 
 - (void)commonInit{
-    _maxParallaxOffset = 80.f;
+    _maxParallaxOffset = 120.f;
     
     self.clipsToBounds = YES;
     

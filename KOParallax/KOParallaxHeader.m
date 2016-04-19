@@ -18,6 +18,9 @@
 @property (strong, nonatomic) UIView *contentView;
 @property (assign, nonatomic) CGPoint currentOffset;
 
+@property (strong, nonatomic) UITapGestureRecognizer *tapContentViewGesture;
+
+
 @end
 
 @implementation KOParallaxHeader
@@ -40,7 +43,6 @@
     }
     return self;
 }
-
 
 - (instancetype)initWithContentView:(UIView *)contentView{
     if (self = [super initWithFrame:contentView.bounds]) {
@@ -70,6 +72,10 @@
         [self.contentView addObserver:self forKeyPath:@"state"
                               options:NSKeyValueObservingOptionNew
                               context:nil];
+        
+        self.tapContentViewGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                             action:@selector(touchContentView:)];
+        [self.contentView addGestureRecognizer:_tapContentViewGesture];
     }
 }
 
@@ -94,6 +100,17 @@
     [self.outsideContainerView removeObserver:self forKeyPath:@"contentOffset"];
     if ([self.contentView isKindOfClass:[KOParallaxView class]]) {
         [self.contentView removeObserver:self forKeyPath:@"state"];
+        [self removeGestureRecognizer:_tapContentViewGesture];
+    }
+}
+
+- (void)touchContentView:(UIGestureRecognizer *)gesture{
+    if (gesture.view == _contentView) {
+        if (((KOParallaxView *)_contentView).state == KOParallaxStateNormal) {
+            if (self.didSelectItemPage && [_contentView isKindOfClass:[KOParallaxView class]]) {
+                self.didSelectItemPage(((KOParallaxView *)_contentView).currentItemPage);
+            }
+        }
     }
 }
 
@@ -119,9 +136,9 @@
         rect.origin.y -= delta;
         rect.size.height += delta;
         
-        NSLog(@"原本Frame :%@",NSStringFromCGRect(self.contentScrollView.frame));
+//        NSLog(@"原本Frame :%@",NSStringFromCGRect(self.contentScrollView.frame));
         self.contentScrollView.frame = rect;
-        NSLog(@"变成Frame :%@",NSStringFromCGRect(self.contentScrollView.frame));
+//        NSLog(@"变成Frame :%@",NSStringFromCGRect(self.contentScrollView.frame));
         self.clipsToBounds = NO;
         self.contentView.frame = self.contentScrollView.bounds;
     }

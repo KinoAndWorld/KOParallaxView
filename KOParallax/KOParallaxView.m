@@ -27,6 +27,8 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
 @property (assign, nonatomic) KOParallaxState state;
 @property (assign, nonatomic) CGSize baseSize;
 
+@property (strong, nonatomic) GCDTimer *timer;
+
 @end
 
 @implementation KOParallaxView
@@ -107,9 +109,6 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
 #pragma mark - ScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    if (scrollView.contentOffset.y != 0.f) {
-//        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, 0);
-//    }
     if (_openParallaxEffect) {
         [self handleParallaxWhenOffsetChanged:scrollView.contentOffset.x];
     }
@@ -126,7 +125,7 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
         [self cycleItemViewsWhenItemIndexChanged];
     }
     
-    NSLog(@"_currentItemIndex : %ld \n _currentItemPage : %ld",(long)_currentItemIndex,(long)_currentItemPage);
+//    NSLog(@"_currentItemIndex : %ld \n _currentItemPage : %ld",(long)_currentItemIndex,(long)_currentItemPage);
 }
 
 - (void)handleParallaxWhenOffsetChanged:(CGFloat)offsetX{
@@ -293,6 +292,34 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
         [self setNeedsLayout];
     }
 }
+
+- (void)setAutoScroll:(BOOL)autoScroll{
+    
+    if (self.displayImages && self.displayImages.count > 1) {
+        if (autoScroll) {
+            //timer
+            _timer = [GCDTimer repeatingTimer:5.f block:^{
+                if (_state != KOParallaxStateScrolling && CGSizeEqualToSize(_baseSize, self.frame.size)) {
+                    
+                    
+                    //这个方法好low，But 暂时先这样
+                    for (int i = 0; i <= [self itemWidth]; i++) {
+                        [self.containerView setContentOffset:CGPointMake(self.containerView.contentOffset.x + i, 0)
+                                                    animated:YES];
+                    }
+                    if (self.containerView.contentOffset.x != [self itemWidth]) {
+                        self.containerView.contentOffset = CGPointMake([self itemWidth], 0);
+                    }
+                }
+            }];
+        }else{
+            if (_timer) {
+                [_timer invalidate];
+            }
+        }
+    }
+}
+
 
 #pragma mark - Getter
 
