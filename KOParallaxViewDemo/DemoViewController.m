@@ -25,10 +25,10 @@
     [super viewDidLoad];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"1.jpg"]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.alpha = 0.0;
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"1.jpg"]
+//                                                  forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.alpha = 0.0;
+//    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:@"Cell"];
     

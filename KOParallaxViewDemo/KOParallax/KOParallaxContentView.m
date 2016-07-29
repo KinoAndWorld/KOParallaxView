@@ -58,6 +58,7 @@
     }
 }
 
+
 #pragma mark - Setter
 
 - (void)setDisplayImage:(UIImage *)displayImage{

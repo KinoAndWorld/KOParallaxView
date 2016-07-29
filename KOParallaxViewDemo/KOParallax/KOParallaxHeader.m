@@ -123,6 +123,13 @@
     }
 }
 
+- (void)dealloc{
+	if ([_contentView isKindOfClass:[KOParallaxView class]]) {
+		[((KOParallaxView *)_contentView) invalidateTimer];
+	}
+	
+}
+
 #pragma mark - Layout
 
 - (void)layoutSubviews{

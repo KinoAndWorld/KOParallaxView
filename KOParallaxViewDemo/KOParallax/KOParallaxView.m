@@ -112,9 +112,7 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
 #pragma mark - ScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    if (scrollView.contentOffset.y != 0.f) {
-//        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, 0);
-//    }
+	
     if (_openParallaxEffect) {
         [self handleParallaxWhenOffsetChanged:scrollView.contentOffset.x];
     }
@@ -131,7 +129,7 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
         [self cycleItemViewsWhenItemIndexChanged];
     }
     
-    NSLog(@"_currentItemIndex : %ld \n _currentItemPage : %ld",(long)_currentItemIndex,(long)_currentItemPage);
+//    NSLog(@"_currentItemIndex : %ld \n _currentItemPage : %ld",(long)_currentItemIndex,(long)_currentItemPage);
 }
 
 - (void)handleParallaxWhenOffsetChanged:(CGFloat)offsetX{
@@ -335,6 +333,10 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
     }
 }
 
+- (void)invalidateTimer{
+	[_timer invalidate];
+	_timer = nil;
+}
 
 #pragma mark - Getter
 

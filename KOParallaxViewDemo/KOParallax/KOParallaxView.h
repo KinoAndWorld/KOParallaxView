@@ -32,6 +32,8 @@
 
 - (void)updateImageAtPage:(NSUInteger)page newImage:(UIImage *)image;
 
+- (void)invalidateTimer;
+
 @end
 
 
