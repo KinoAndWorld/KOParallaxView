@@ -52,6 +52,7 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
     _scrollEnabled = YES;
     _pagingEnabled = YES;
     _currentItemPage = 0;
+    _autoScrollDuration = 5;
     
     [self addSubview:self.containerView];
     
@@ -74,6 +75,8 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
     }else{
         [self constructContentView];
     }
+    
+    [self checkViewAutoScroll];
 }
 
 - (void)constructSinplePage{
@@ -109,6 +112,7 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
 #pragma mark - ScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+	
     if (_openParallaxEffect) {
         [self handleParallaxWhenOffsetChanged:scrollView.contentOffset.x];
     }
@@ -294,15 +298,24 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
 }
 
 - (void)setAutoScroll:(BOOL)autoScroll{
+    _autoScroll = autoScroll;
     
+    [self checkViewAutoScroll];
+}
+
+- (void)checkViewAutoScroll{
     if (self.displayImages && self.displayImages.count > 1) {
-        if (autoScroll) {
+        
+        if (_timer) {
+            [_timer invalidate];
+            _timer = nil;
+        }
+        
+        if (_autoScroll) {
             //timer
-            _timer = [GCDTimer repeatingTimer:5.f block:^{
+            _timer = [GCDTimer repeatingTimer:_autoScrollDuration block:^{
                 if (_state != KOParallaxStateScrolling && CGSizeEqualToSize(_baseSize, self.frame.size)) {
-                    
-                    
-                    //这个方法好low，But 暂时先这样
+                    //暂时先这样  虽然有点蠢
                     for (int i = 0; i <= [self itemWidth]; i++) {
                         [self.containerView setContentOffset:CGPointMake(self.containerView.contentOffset.x + i, 0)
                                                     animated:YES];
@@ -320,6 +333,10 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
     }
 }
 
+- (void)invalidateTimer{
+	[_timer invalidate];
+	_timer = nil;
+}
 
 #pragma mark - Getter
 
@@ -363,6 +380,46 @@ NS_ENUM(NSUInteger, KOParallaxViewPosition){
         willComePage = maxPage;
     }
     return willComePage;
+}
+
+@end
+
+
+@interface GCDTimer()
+
+@property (copy, nonatomic) void(^excuteBlock)(void);
+
+@property (strong, nonatomic) dispatch_source_t source;
+
+@end
+
+@implementation GCDTimer
+
++ (GCDTimer *)repeatingTimer:(NSTimeInterval)seconds
+                       block:(void (^)(void))block {
+    NSParameterAssert(seconds);
+    NSParameterAssert(block);
+    
+    GCDTimer *timer = [[self alloc] init];
+    timer.excuteBlock = block;
+    timer.source = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER,
+                                          0, 0,
+                                          dispatch_get_main_queue());
+    uint64_t nsec = (uint64_t)(seconds * NSEC_PER_SEC);
+    dispatch_source_set_timer(timer.source,
+                              dispatch_time(DISPATCH_TIME_NOW, nsec),
+                              nsec, 0);
+    dispatch_source_set_event_handler(timer.source, block);
+    dispatch_resume(timer.source);
+    return timer;
+}
+
+- (void)invalidate {
+    if (self.source) {
+        dispatch_source_cancel(self.source);
+        self.source = nil;
+    }
+    self.excuteBlock = nil;
 }
 
 @end

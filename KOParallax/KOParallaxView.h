@@ -23,6 +23,7 @@
 @property (assign, nonatomic, readonly) KOParallaxState state;
 
 @property (assign, nonatomic) BOOL autoScroll;
+@property (assign, nonatomic) NSTimeInterval autoScrollDuration;    //default 5
 
 - (instancetype)initWithFrame:(CGRect)frame
          isOpenParallaxEffect:(BOOL)openParallaxEffect;
@@ -30,5 +31,17 @@
 - (void)shiftCenterContentViewByDeltaValue:(CGFloat)delta;
 
 - (void)updateImageAtPage:(NSUInteger)page newImage:(UIImage *)image;
+
+- (void)invalidateTimer;
+
+@end
+
+
+@interface GCDTimer : NSObject
+
++ (GCDTimer *)repeatingTimer:(NSTimeInterval)seconds
+                       block:(void (^)(void))block;
+
+- (void)invalidate;
 
 @end

@@ -27,7 +27,7 @@
 }
 
 - (void)commonInit{
-    _maxParallaxOffset = 50.f;
+    _maxParallaxOffset = 120.f;
     
     self.clipsToBounds = YES;
     
@@ -58,6 +58,7 @@
     }
 }
 
+
 #pragma mark - Setter
 
 - (void)setDisplayImage:(UIImage *)displayImage{
@@ -81,7 +82,7 @@
     _parallaxProgress = parallaxProgress;
     CGRect frame = self.displayImageView.frame;
     
-    frame.origin.x = -_maxParallaxOffset + parallaxProgress * -_maxParallaxOffset;
+    frame.origin.x = -_maxParallaxOffset + parallaxProgress * _maxParallaxOffset;
     self.displayImageView.frame = frame;
 }
 

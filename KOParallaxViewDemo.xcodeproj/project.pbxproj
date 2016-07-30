@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		305C97F339AFFC296BF2F3E6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BC3B14814F2BA0C0FE1FCB /* libPods.a */; };
+		3801EBC01D4C54890062AED1 /* KOParallaxContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801EBBB1D4C54890062AED1 /* KOParallaxContentView.m */; };
+		3801EBC11D4C54890062AED1 /* KOParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801EBBD1D4C54890062AED1 /* KOParallaxHeader.m */; };
+		3801EBC21D4C54890062AED1 /* KOParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801EBBF1D4C54890062AED1 /* KOParallaxView.m */; };
 		3876BD511B9AEA6500B8EF0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD501B9AEA6500B8EF0B /* main.m */; };
 		3876BD541B9AEA6500B8EF0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD531B9AEA6500B8EF0B /* AppDelegate.m */; };
 		3876BD571B9AEA6500B8EF0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD561B9AEA6500B8EF0B /* ViewController.m */; };
@@ -16,9 +19,6 @@
 		3876BD5F1B9AEA6500B8EF0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD5D1B9AEA6500B8EF0B /* LaunchScreen.xib */; };
 		3876BD6B1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD6A1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m */; };
 		3876BD761B9AF26200B8EF0B /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD751B9AF26200B8EF0B /* DemoViewController.m */; };
-		3876BD7F1B9AF2E400B8EF0B /* KOParallaxContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD7A1B9AF2E400B8EF0B /* KOParallaxContentView.m */; };
-		3876BD801B9AF2E400B8EF0B /* KOParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD7C1B9AF2E400B8EF0B /* KOParallaxHeader.m */; };
-		3876BD811B9AF2E400B8EF0B /* KOParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876BD7E1B9AF2E400B8EF0B /* KOParallaxView.m */; };
 		3876BD871B9AF2F600B8EF0B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD821B9AF2F600B8EF0B /* 1.jpg */; };
 		3876BD881B9AF2F600B8EF0B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD831B9AF2F600B8EF0B /* 2.jpg */; };
 		3876BD891B9AF2F600B8EF0B /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3876BD841B9AF2F600B8EF0B /* 3.jpg */; };
@@ -38,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3801EBB91D4C54890062AED1 /* KOParallaxConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxConst.h; sourceTree = "<group>"; };
+		3801EBBA1D4C54890062AED1 /* KOParallaxContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxContentView.h; sourceTree = "<group>"; };
+		3801EBBB1D4C54890062AED1 /* KOParallaxContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxContentView.m; sourceTree = "<group>"; };
+		3801EBBC1D4C54890062AED1 /* KOParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxHeader.h; sourceTree = "<group>"; };
+		3801EBBD1D4C54890062AED1 /* KOParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxHeader.m; sourceTree = "<group>"; };
+		3801EBBE1D4C54890062AED1 /* KOParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxView.h; sourceTree = "<group>"; };
+		3801EBBF1D4C54890062AED1 /* KOParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxView.m; sourceTree = "<group>"; };
 		3876BD4B1B9AEA6500B8EF0B /* KOParallaxViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOParallaxViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3876BD4F1B9AEA6500B8EF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3876BD501B9AEA6500B8EF0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,13 +60,6 @@
 		3876BD6A1B9AEA6500B8EF0B /* KOParallaxViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOParallaxViewDemoTests.m; sourceTree = "<group>"; };
 		3876BD741B9AF26200B8EF0B /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		3876BD751B9AF26200B8EF0B /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		3876BD781B9AF2E400B8EF0B /* KOParallaxConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxConst.h; sourceTree = "<group>"; };
-		3876BD791B9AF2E400B8EF0B /* KOParallaxContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxContentView.h; sourceTree = "<group>"; };
-		3876BD7A1B9AF2E400B8EF0B /* KOParallaxContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxContentView.m; sourceTree = "<group>"; };
-		3876BD7B1B9AF2E400B8EF0B /* KOParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxHeader.h; sourceTree = "<group>"; };
-		3876BD7C1B9AF2E400B8EF0B /* KOParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxHeader.m; sourceTree = "<group>"; };
-		3876BD7D1B9AF2E400B8EF0B /* KOParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOParallaxView.h; sourceTree = "<group>"; };
-		3876BD7E1B9AF2E400B8EF0B /* KOParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOParallaxView.m; sourceTree = "<group>"; };
 		3876BD821B9AF2F600B8EF0B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		3876BD831B9AF2F600B8EF0B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		3876BD841B9AF2F600B8EF0B /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -90,6 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3801EBB81D4C54890062AED1 /* KOParallax */ = {
+			isa = PBXGroup;
+			children = (
+				3801EBB91D4C54890062AED1 /* KOParallaxConst.h */,
+				3801EBBA1D4C54890062AED1 /* KOParallaxContentView.h */,
+				3801EBBB1D4C54890062AED1 /* KOParallaxContentView.m */,
+				3801EBBC1D4C54890062AED1 /* KOParallaxHeader.h */,
+				3801EBBD1D4C54890062AED1 /* KOParallaxHeader.m */,
+				3801EBBE1D4C54890062AED1 /* KOParallaxView.h */,
+				3801EBBF1D4C54890062AED1 /* KOParallaxView.m */,
+			);
+			path = KOParallax;
+			sourceTree = "<group>";
+		};
 		3876BD421B9AEA6500B8EF0B = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +127,7 @@
 		3876BD4D1B9AEA6500B8EF0B /* KOParallaxViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3801EBB81D4C54890062AED1 /* KOParallax */,
 				3876BD521B9AEA6500B8EF0B /* AppDelegate.h */,
 				3876BD531B9AEA6500B8EF0B /* AppDelegate.m */,
 				3876BD551B9AEA6500B8EF0B /* ViewController.h */,
@@ -121,7 +136,6 @@
 				3876BD751B9AF26200B8EF0B /* DemoViewController.m */,
 				3876BD581B9AEA6500B8EF0B /* Main.storyboard */,
 				3876BD5B1B9AEA6500B8EF0B /* Images.xcassets */,
-				3876BD771B9AF2E400B8EF0B /* KOParallax */,
 				3876BD5D1B9AEA6500B8EF0B /* LaunchScreen.xib */,
 				3876BD4E1B9AEA6500B8EF0B /* Supporting Files */,
 			);
@@ -158,20 +172,6 @@
 				3876BD691B9AEA6500B8EF0B /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3876BD771B9AF2E400B8EF0B /* KOParallax */ = {
-			isa = PBXGroup;
-			children = (
-				3876BD781B9AF2E400B8EF0B /* KOParallaxConst.h */,
-				3876BD791B9AF2E400B8EF0B /* KOParallaxContentView.h */,
-				3876BD7A1B9AF2E400B8EF0B /* KOParallaxContentView.m */,
-				3876BD7B1B9AF2E400B8EF0B /* KOParallaxHeader.h */,
-				3876BD7C1B9AF2E400B8EF0B /* KOParallaxHeader.m */,
-				3876BD7D1B9AF2E400B8EF0B /* KOParallaxView.h */,
-				3876BD7E1B9AF2E400B8EF0B /* KOParallaxView.m */,
-			);
-			path = KOParallax;
 			sourceTree = "<group>";
 		};
 		9CAB3202654965E8C5935044 /* Frameworks */ = {
@@ -332,12 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3876BD571B9AEA6500B8EF0B /* ViewController.m in Sources */,
-				3876BD801B9AF2E400B8EF0B /* KOParallaxHeader.m in Sources */,
-				3876BD811B9AF2E400B8EF0B /* KOParallaxView.m in Sources */,
+				3801EBC11D4C54890062AED1 /* KOParallaxHeader.m in Sources */,
+				3801EBC21D4C54890062AED1 /* KOParallaxView.m in Sources */,
 				3876BD541B9AEA6500B8EF0B /* AppDelegate.m in Sources */,
 				3876BD511B9AEA6500B8EF0B /* main.m in Sources */,
 				3876BD761B9AF26200B8EF0B /* DemoViewController.m in Sources */,
-				3876BD7F1B9AF2E400B8EF0B /* KOParallaxContentView.m in Sources */,
+				3801EBC01D4C54890062AED1 /* KOParallaxContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
